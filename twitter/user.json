@@ -1,0 +1,206 @@
+"user": {
+  "properties": {
+    "contributors_enabled": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "date",
+      "format": "EEE MMM dd HH:mm:ss Z yyyy"
+    },
+    "default_profile": {
+      "type": "boolean"
+    },
+    "default_profile_image": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "favourites_count": {
+      "type": "long"
+    },
+    "followers_count": {
+      "type": "long"
+    },
+    "friends_count": {
+      "type": "long"
+    },
+    "geo_enabled": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "long"
+    },
+    "id_str": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "is_translator": {
+      "type": "boolean"
+    },
+    "listed_count": {
+      "type": "long"
+    },
+    "location": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_background_color": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_background_image_url": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_background_image_url_https": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_background_tile": {
+      "type": "boolean"
+    },
+    "profile_banner_url": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_image_url": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_image_url_https": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_link_color": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_sidebar_border_color": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_sidebar_fill_color": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_text_color": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "profile_use_background_image": {
+      "type": "boolean"
+    },
+    "protected": {
+      "type": "boolean"
+    },
+    "screen_name": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "statuses_count": {
+      "type": "long"
+    },
+    "translator_type": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "url": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  }
+}
