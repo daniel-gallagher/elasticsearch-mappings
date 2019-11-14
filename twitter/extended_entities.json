@@ -1,9 +1,31 @@
-"extended_entities": {
+{
   "properties": {
-    "media": {
+    "extended_entities": {
       "properties": {
-        "additional_media_info": {
+        "media": {
           "properties": {
+            "additional_media_info": {
+              "properties": {
+                "description": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "embeddable": {
+                  "type": "boolean"
+                },
+                "monetizable": {
+                  "type": "boolean"
+                },
+                "title": {
+                  "type": "keyword"
+                }
+              }
+            },
             "description": {
               "type": "text",
               "fields": {
@@ -13,139 +35,121 @@
                 }
               }
             },
-            "embeddable": {
-              "type": "boolean"
-            },
-            "monetizable": {
-              "type": "boolean"
-            },
-            "title": {
+            "display_url": {
               "type": "keyword"
-            }
-          }
-        },
-        "description": {
-          "type": "text",
-          "fields": {
-            "keyword": {
-              "type": "keyword",
-              "ignore_above": 256
-            }
-          }
-        },
-        "display_url": {
-          "type": "keyword"
-        },
-        "expanded_url": {
-          "type": "keyword"
-        },
-        "id": {
-          "type": "long"
-        },
-        "id_str": {
-          "type": "keyword"
-        },
-        "indices": {
-          "type": "short"
-        },
-        "media_url": {
-          "type": "keyword"
-        },
-        "media_url_https": {
-          "type": "keyword"
-        },
-        "sizes": {
-          "properties": {
-            "large": {
-              "properties": {
-                "h": {
-                  "type": "short"
-                },
-                "resize": {
-                  "type": "keyword"
-                },
-                "w": {
-                  "type": "short"
-                }
-              }
             },
-            "medium": {
-              "properties": {
-                "h": {
-                  "type": "short"
-                },
-                "resize": {
-                  "type": "keyword"
-                },
-                "w": {
-                  "type": "short"
-                }
-              }
+            "expanded_url": {
+              "type": "keyword"
             },
-            "small": {
-              "properties": {
-                "h": {
-                  "type": "short"
-                },
-                "resize": {
-                  "type": "keyword"
-                },
-                "w": {
-                  "type": "short"
-                }
-              }
-            },
-            "thumb": {
-              "properties": {
-                "h": {
-                  "type": "short"
-                },
-                "resize": {
-                  "type": "keyword"
-                },
-                "w": {
-                  "type": "short"
-                }
-              }
-            }
-          }
-        },
-        "source_status_id": {
-          "type": "long"
-        },
-        "source_status_id_str": {
-          "type": "keyword"
-        },
-        "source_user_id": {
-          "type": "long"
-        },
-        "source_user_id_str": {
-          "type": "keyword"
-        },
-        "type": {
-          "type": "keyword"
-        },
-        "url": {
-          "type": "keyword"
-        },
-        "video_info": {
-          "properties": {
-            "aspect_ratio": {
-              "type": "short"
-            },
-            "duration_millis": {
+            "id": {
               "type": "long"
             },
-            "variants": {
+            "id_str": {
+              "type": "keyword"
+            },
+            "indices": {
+              "type": "short"
+            },
+            "media_url": {
+              "type": "keyword"
+            },
+            "media_url_https": {
+              "type": "keyword"
+            },
+            "sizes": {
               "properties": {
-                "bitrate": {
+                "large": {
+                  "properties": {
+                    "h": {
+                      "type": "short"
+                    },
+                    "resize": {
+                      "type": "keyword"
+                    },
+                    "w": {
+                      "type": "short"
+                    }
+                  }
+                },
+                "medium": {
+                  "properties": {
+                    "h": {
+                      "type": "short"
+                    },
+                    "resize": {
+                      "type": "keyword"
+                    },
+                    "w": {
+                      "type": "short"
+                    }
+                  }
+                },
+                "small": {
+                  "properties": {
+                    "h": {
+                      "type": "short"
+                    },
+                    "resize": {
+                      "type": "keyword"
+                    },
+                    "w": {
+                      "type": "short"
+                    }
+                  }
+                },
+                "thumb": {
+                  "properties": {
+                    "h": {
+                      "type": "short"
+                    },
+                    "resize": {
+                      "type": "keyword"
+                    },
+                    "w": {
+                      "type": "short"
+                    }
+                  }
+                }
+              }
+            },
+            "source_status_id": {
+              "type": "long"
+            },
+            "source_status_id_str": {
+              "type": "keyword"
+            },
+            "source_user_id": {
+              "type": "long"
+            },
+            "source_user_id_str": {
+              "type": "keyword"
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "url": {
+              "type": "keyword"
+            },
+            "video_info": {
+              "properties": {
+                "aspect_ratio": {
+                  "type": "short"
+                },
+                "duration_millis": {
                   "type": "long"
                 },
-                "content_type": {
-                  "type": "keyword"
-                },
-                "url": {
-                  "type": "keyword"
+                "variants": {
+                  "properties": {
+                    "bitrate": {
+                      "type": "long"
+                    },
+                    "content_type": {
+                      "type": "keyword"
+                    },
+                    "url": {
+                      "type": "keyword"
+                    }
+                  }
                 }
               }
             }
