@@ -3,7 +3,7 @@
     "coordinates": {
       "properties": {
         "coordinates": {
-          "type": "geo_point"
+          "type": "text"
         }
       }
     },
@@ -447,7 +447,7 @@
     "geo": {
       "properties": {
         "coordinates": {
-          "type": "geo_point"
+          "type": "text"
         },
         "type": {
           "type": "keyword"
@@ -495,7 +495,7 @@
         "bounding_box": {
           "properties": {
             "coordinates": {
-              "type": "geo_point"
+              "type": "text"
             },
             "type": {
               "type": "keyword"
