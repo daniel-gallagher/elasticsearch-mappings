@@ -1,0 +1,77 @@
+{
+  "dynamic_templates": [
+    {
+      "created_at": {
+        "match_mapping_type": "string",
+        "match": "created_at",
+        "mapping": {
+          "type": "date",
+          "format": "EEE MMM dd HH:mm:ss Z yyyy"
+        }
+      }
+    },
+    {
+      "id_str": {
+        "match_mapping_type": "string",
+        "match": "*id_str",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "indices": {
+        "match_mapping_type": "long",
+        "match": "indices",
+        "mapping": {
+          "type": "short"
+        }
+      }
+    },
+    {
+      "url": {
+        "match_mapping_type": "string",
+        "match": "*_url*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "media_height": {
+        "match_mapping_type": "long",
+        "match": "h",
+        "mapping": {
+          "type": "short"
+        }
+      }
+    },
+    {
+      "media_width": {
+        "match_mapping_type": "long",
+        "match": "w",
+        "mapping": {
+          "type": "short"
+        }
+      }
+    },
+    {
+      "media_size": {
+        "match_mapping_type": "string",
+        "match": "resize",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "profile_color": {
+        "match_mapping_type": "string",
+        "match": "_color",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    }
+  ]
+}
