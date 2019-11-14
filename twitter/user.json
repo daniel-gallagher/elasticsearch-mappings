@@ -1,140 +1,146 @@
-"user": {
-  "properties": {
-    "contributors_enabled": {
-      "type": "boolean"
-    },
-    "created_at": {
-      "type": "date",
-      "format": "EEE MMM dd HH:mm:ss Z yyyy"
-    },
-    "default_profile": {
-      "type": "boolean"
-    },
-    "default_profile_image": {
-      "type": "boolean"
-    },
-    "description": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
+{
+  "mappings": {
+    "properties": {
+      "user": {
+        "properties": {
+          "contributors_enabled": {
+            "type": "boolean"
+          },
+          "created_at": {
+            "type": "date",
+            "format": "EEE MMM dd HH:mm:ss Z yyyy"
+          },
+          "default_profile": {
+            "type": "boolean"
+          },
+          "default_profile_image": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "favourites_count": {
+            "type": "integer"
+          },
+          "followers_count": {
+            "type": "integer"
+          },
+          "friends_count": {
+            "type": "integer"
+          },
+          "geo_enabled": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "long"
+          },
+          "id_str": {
+            "type": "keyword"
+          },
+          "is_translator": {
+            "type": "boolean"
+          },
+          "listed_count": {
+            "type": "integer"
+          },
+          "location": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "profile_background_color": {
+            "type": "keyword"
+          },
+          "profile_background_image_url": {
+            "enabled": false
+          },
+          "profile_background_image_url_https": {
+            "enabled": false
+          },
+          "profile_background_tile": {
+            "type": "boolean"
+          },
+          "profile_banner_url": {
+            "enabled": false
+          },
+          "profile_image_url": {
+            "enabled": false
+          },
+          "profile_image_url_https": {
+            "enabled": false
+          },
+          "profile_link_color": {
+            "type": "keyword"
+          },
+          "profile_sidebar_border_color": {
+            "type": "keyword"
+          },
+          "profile_sidebar_fill_color": {
+            "type": "keyword"
+          },
+          "profile_text_color": {
+            "type": "keyword"
+          },
+          "profile_use_background_image": {
+            "type": "boolean"
+          },
+          "protected": {
+            "type": "boolean"
+          },
+          "screen_name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "statuses_count": {
+            "type": "integer"
+          },
+          "translator_type": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "url": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "verified": {
+            "type": "boolean"
+          }
         }
       }
-    },
-    "favourites_count": {
-      "type": "integer"
-    },
-    "followers_count": {
-      "type": "integer"
-    },
-    "friends_count": {
-      "type": "integer"
-    },
-    "geo_enabled": {
-      "type": "boolean"
-    },
-    "id": {
-      "type": "long"
-    },
-    "id_str": {
-      "type": "keyword"
-    },
-    "is_translator": {
-      "type": "boolean"
-    },
-    "listed_count": {
-      "type": "integer"
-    },
-    "location": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "name": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "profile_background_color": {
-      "type": "keyword"
-    },
-    "profile_background_image_url": {
-      "enabled": false
-    },
-    "profile_background_image_url_https": {
-      "enabled": false
-    },
-    "profile_background_tile": {
-      "type": "boolean"
-    },
-    "profile_banner_url": {
-      "enabled": false
-    },
-    "profile_image_url": {
-      "enabled": false
-    },
-    "profile_image_url_https": {
-      "enabled": false
-    },
-    "profile_link_color": {
-      "type": "keyword"
-    },
-    "profile_sidebar_border_color": {
-      "type": "keyword"
-    },
-    "profile_sidebar_fill_color": {
-      "type": "keyword"
-    },
-    "profile_text_color": {
-      "type": "keyword"
-    },
-    "profile_use_background_image": {
-      "type": "boolean"
-    },
-    "protected": {
-      "type": "boolean"
-    },
-    "screen_name": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "statuses_count": {
-      "type": "integer"
-    },
-    "translator_type": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "url": {
-      "type": "text",
-      "fields": {
-        "keyword": {
-          "type": "keyword",
-          "ignore_above": 256
-        }
-      }
-    },
-    "verified": {
-      "type": "boolean"
     }
   }
 }
