@@ -329,7 +329,7 @@
                           "type": "short"
                         },
                         "resize": {
-                          "type": "text"
+                          "type": "keyword"
                         },
                         "w": {
                           "type": "short"
