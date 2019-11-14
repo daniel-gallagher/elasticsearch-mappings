@@ -18,15 +18,6 @@
           "properties": {
             "coordinates": {
               "type": "geo_point"
-            },
-            "type": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
             }
           }
         },
