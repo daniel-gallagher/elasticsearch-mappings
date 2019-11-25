@@ -1,0 +1,101 @@
+{
+  "dynamic_templates": [
+    {
+      "http": {
+        "match_mapping_type": "*",
+        "path_match": "http",
+        "mapping": {
+          "dynamic": false,
+          "enabled": false
+        }
+      }
+    },
+    {
+      "_shodan": {
+        "match_mapping_type": "object",
+        "path_match": "_shodan",
+        "mapping": {
+          "dynamic": false,
+          "enabled": false
+        }
+      }
+    },
+    {
+      "nodes": {
+        "match_mapping_type": "object",
+        "path_match": "elastic.nodes.nodes",
+        "mapping": {
+          "type": "object",
+          "dynamic": false,
+          "enabled": false
+        }
+      }
+    },
+    {
+      "indices": {
+        "match_mapping_type": "object",
+        "path_match": "elastic.indices",
+        "mapping": {
+          "type": "object",
+          "ignore_malformed": true,
+          "dynamic": false,
+          "enabled": false
+        }
+      }
+    },
+    {
+      "data": {
+        "match_mapping_type": "*",
+        "match": "data",
+        "mapping": {
+          "type": "text"
+        }
+      }
+    },
+    {
+      "timestamp": {
+        "match_mapping_type": "string",
+        "match": "timestamp",
+        "mapping": {
+          "type": "date"
+        }
+      }
+    },
+    {
+      "ip_str": {
+        "match_mapping_type": "string",
+        "match": "ip_str",
+        "mapping": {
+          "type": "ip"
+        }
+      }
+    },
+    {
+      "asn": {
+        "match_mapping_type": "string",
+        "match": "asn",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "version": {
+        "match_mapping_type": "string",
+        "match": "version",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "port": {
+        "match_mapping_type": "long",
+        "match": "port",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    }
+  ]
+}
